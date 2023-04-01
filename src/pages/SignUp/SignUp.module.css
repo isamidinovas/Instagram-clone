@@ -1,0 +1,23 @@
+
+
+.inputs{
+    margin: 10px 0px;
+  }
+
+  .text::after{
+    content: "";
+    display: block;
+    width: 90px;
+    margin: -10px 2px;
+    height: 2px;
+    color: red;
+    background-color:rgb(233, 230, 230);
+    }
+    .text::before{
+      content: "";
+      display: block;
+      width: 90px;
+      margin: -13px 156px;
+      height: 2px;
+      background-color:rgb(233, 230, 230)
+      }
