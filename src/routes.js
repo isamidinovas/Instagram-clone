@@ -1,3 +1,4 @@
+import { Home } from "./pages/Home/Home";
 import { SignIn } from "./pages/SignIn/SignIn";
 import { SignUp } from "./pages/SignUp/SignUp";
 
@@ -11,8 +12,8 @@ const routesConfig = [
     element: <SignUp />,
   },
   {
-    path: "/people/:id",
-    // element: <PersonPage />,
+    path: "/",
+    element: <Home />,
   },
 ];
 
