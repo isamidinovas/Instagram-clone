@@ -4,7 +4,7 @@ import { Post } from "../Post/Post";
 export const PostsBar = () => {
   return (
     <div>
-      <Box flex={4} p={2}>
+      <Box flex={4} p={4} >
         <Post />
         <Post />
         <Post />

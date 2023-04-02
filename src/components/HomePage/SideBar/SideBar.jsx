@@ -17,11 +17,30 @@ import {
   ListItemText,
 } from "@mui/material";
 import React from "react";
+import { Dashboard } from "./Dashboard";
 
 export const SideBar = () => {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
-      <Box position="fixed">
+    <Box
+      flex={1}
+      p={2}
+      sx={{
+        display: {
+          xs: "none",
+          sm: "block",
+
+          // maxWidth: "250px",
+        },
+      }}
+    >
+      <Box
+        position="fixed"
+        sx={{
+          borderRight: "1px solid rgb(233, 230, 230)",
+          height: "100%",
+          width: "300px",
+        }}
+      >
         <Typography
           sx={{ padding: "20px 15px ", fontSize: "22px", fontWeight: "bold" }}
         >
@@ -95,6 +114,7 @@ export const SideBar = () => {
             </ListItemButton>
           </ListItem>
         </List>
+        <Dashboard />
       </Box>
     </Box>
   );

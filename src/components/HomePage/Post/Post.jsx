@@ -20,8 +20,7 @@ export const Post = () => {
   return (
     <Card
       sx={{
-        // maxWidth: 345,
-        width: "345px",
+        maxWidth: "350px",
         boxShadow: "none",
         borderBottom: "1px solid black",
       }}
@@ -41,10 +40,13 @@ export const Post = () => {
         subheader="September 14, 2016"
       />
       <CardMedia
-        sx={{ border: "1px solid black" }}
+        sx={{
+          boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+          objectFit: "cover",
+        }}
         component="img"
-        // height="194"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxR0-tocDyyroqI_Ud8C0DX0Nii6ELA70mw&usqp=CAU"
+        height="460px"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSlQfpgEtsZMiptan4DH2IU4mXAOkPTzWcKQ&usqp=CAU"
         alt="Paella dish"
       />
 
@@ -59,7 +61,10 @@ export const Post = () => {
         <IconButton aria-label="share">
           <Send />
         </IconButton>
-        <IconButton aria-label="save" sx={{ position: "absolute", right: "0" }}>
+        <IconButton
+          aria-label="save"
+          sx={{ position: "relative", right: "-190px" }}
+        >
           <BookmarkBorder />
         </IconButton>
       </CardActions>
